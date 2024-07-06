@@ -1,3 +1,10 @@
 <div>
     <p> current we are in about component works!</p>
+    <!-- '/' is  used to add it as absolute  to the exixting route path. it will add after the domain -->
+    <li><a routerLink="child" routerLinkActive="bactive" [routerLinkActiveOptions]="{exact:true}">dispplay child</a></li> 
+    <input type="text" placeholder="enter u r id" ngModel #id="ngModel"> | 
+    <input type="text" placeholder="enter u r name" ngModel #name="ngModel">
+    |
+    <a [routerLink]="id.value+'/'+name.value">know him </a>
+    <router-outlet></router-outlet>
 </div>
