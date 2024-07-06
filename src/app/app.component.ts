@@ -28,3 +28,9 @@ export class AppComponent implements OnInit {
 // 3. how to navigate to router paths using router Link 
 // 4.  how to navigate to router paths using programmatic way 
 // 5. routerLinkActive and routerLinkActiveOptions
+// date 6/7/2024
+// 1. how to pass parameters to route path
+// 2. how to get parameters values in our component using traditional way snapshot one
+// 3. how to get parameters  values in our component using params observable
+//4. child routes registry 
+//5. usage of app.routing.module.ts for route path info/registration
