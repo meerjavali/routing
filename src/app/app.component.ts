@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Router, RouterLink } from '@angular/router';
 import { RouterTestingHarness } from '@angular/router/testing';
+import { AuthGuardService } from './auth-guard.service';
+import { FakeAuthService } from './fake-auth.service';
 
 @Component({
   selector: 'app-root',
@@ -11,14 +13,21 @@ export class AppComponent implements OnInit {
   title = 'routing';
 
   ngOnInit(){
-
+    
   }
- constructor(private router:Router){} // Dependencies are injected as constructor parameter
+ constructor(private router:Router, private auth:AuthGuardService, private ser:FakeAuthService){} // Dependencies are injected as constructor parameter
   
  
  OnAboutClick(){/// this method used for programatic navigation
     //
     this.router.navigate(['/about']);
+  }
+
+  login(){
+    this.ser.login();
+  }
+  logout(){
+    this.ser.logout();
   }
 }
 

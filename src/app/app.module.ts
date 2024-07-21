@@ -10,6 +10,9 @@ import { MainComponent } from './main/main.component';
 import { AboutsComponent } from './about/child/abouts/abouts.component';
 import { FormsModule } from '@angular/forms';
 import { ChildComponent } from './about/child/child.component';
+import { ErrorComponent } from './error/error.component';
+//import { AuthGuardService } from './auth-guard.service';
+//import { AuthGuardService } from './auth-guard.service';
 //*
 //this code is shifted to app.routing.module.ts
 
@@ -29,7 +32,8 @@ import { ChildComponent } from './about/child/child.component';
     AboutComponent,
     HomeComponent,
     MainComponent,
-    AboutsComponent
+    AboutsComponent,
+    ErrorComponent
   ],
   imports: [
     BrowserModule,
